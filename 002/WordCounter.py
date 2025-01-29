@@ -12,8 +12,8 @@ def Init():
 
     sentance = input("Input sentance: ")
     
-    words = sentance.split(" ")
-    print("The number of words in your sentance is: ", len(words))
+    
+    print("The number of words in your sentance is: ", sentance.count(' '))
     anwser = input("Would you like to try a different sentance? (Y/N): ")
     if anwser.lower() == "y":
         Init()
