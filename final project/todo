@@ -1,0 +1,29 @@
+# TODO List for Final Project
+
+# 1. Build Classes
+#    - Create a `Car` class to represent individual cars.
+#    - Create a `ParkingGarage` class to manage the parking structure.
+#    - Create a `Floor` class to represent individual floors in the garage.
+
+# 2. Build Functions to Move Cars
+#    - Implement functionality to park a car in a specific spot.
+#    - Implement functionality to remove a car from a spot.
+#    - Implement functionality to move a car from one spot to another.
+
+# 3. Functions for Checking Car Locations
+#    - Implement a function to check where a specific car is parked.
+#    - Implement a function to list all empty parking spots.
+#    - Implement a function to list all occupied parking spots.
+
+
+# 4. make sure to add docstrings to all classes and functions
+# 5. Add error handling for invalid inputs (e.g., trying to park in a full garage, etc.)
+# 6. Add unit tests for all classes and functions to ensure they work as expected.
+# 7. make a logger programmatically to log all the actions taken in the parking garage (e.g., parking a car, removing a car, etc.)
+# 8. Add a user interface (UI) to interact with the parking garage system.
+# 9. Class Concepts and Features
+- **Car Class**: Implements the concept of a single car.
+- **ParkingGarage Class**: Utilizes a combination of `class` and `list`/`set` to manage parked cars.
+- **Arrival/Departure**: Simulates car arrival and departure using `random` for unpredictability.
+- **Log File**: Uses `File I/O` to log all actions (e.g., parking, removing, moving cars).
+- **Unique License Plate**: Employs `set()` for fast lookup and to ensure license plate uniqueness.
