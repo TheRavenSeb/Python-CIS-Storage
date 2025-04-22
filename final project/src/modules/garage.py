@@ -79,7 +79,7 @@ class Garage():
             """
             Returns the total capacity of the garage.
             """
-            return len(self.ParkingSpotSet)    
+            return len(self.ParkingCarList)    
             
             
 
