@@ -26,9 +26,15 @@ class logger:
         
         if not os.path.exists('logs'):
             os.makedirs('logs')
+            print("Logs directory created.")
             
             
     
+        # Ensure the logs directory exists before configuring logging
+        if not os.path.exists('logs'):
+            os.makedirs('logs')
+            print("Logs directory created.")
+
         # Configure logging
         logging.basicConfig(
             filename=self.log_file_path,  # Use the timestamped log filename
@@ -75,15 +81,21 @@ class logger:
         """
         logging.debug(message)
         print(f"DEBUG: {message}")
-    def __close(self):
+    def close():
         """
         Close the logger and release any resources.
         """
         logging.shutdown()
         print("Logger closed.")
           
-    atexit.register(__close)
+    
         
 
-
+def close():
+        """
+        Close the logger and release any resources.
+        """
+        logging.shutdown()
+        print("Logger closed.")
     
+atexit.register(close)
